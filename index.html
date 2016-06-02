@@ -1,0 +1,37 @@
+<!-- 3. Ensure that pieces do not exceed a standard chess set (1 King, 1 Queen, 2 Bishops, 2 Knights, 2 Rooks, 8 Pawns, one set per player)<br>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chess</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src='script.js'></script>
+  </head
+
+  <body>
+    <h1>Let's Play Chess</h1>
+
+    <h3>Instructions:</h3>
+    <ul>
+      <li>Set up the chess board using the input field below.</li>
+      <li>Move pieces by dragging and dropping into a new square.</li>
+      <li>To delete, drag and drop to the designated "Delete Piece" area.</li>
+    </ul>
+
+    <div class="chessBoard"></div>
+
+    <form>
+      <h2>Set Up</h2>
+      <p>Please set up your chess board and get ready to play!</p>
+      Color (B|W): <input type="text" id="color" value="" /><br>
+      Piece (P|H|B|R|K|Q): <input type="text" id="piece" value="" /><br>
+      Position (ColRow, Ex: D3): <input type="text" id="position" value="" /><br>
+      <input type="button" id="submitBtn" value="Submit">
+    </form>
+
+  </body>
+</html>
